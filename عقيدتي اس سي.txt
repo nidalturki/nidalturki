@@ -1,0 +1,291 @@
+*,
+body,
+html {
+    margin: 0;
+    padding: 0;
+    font: 1em "open sans", sans-serif;
+}
+
+body {
+    background-color: rgb(226, 240, 245);
+}
+
+/*---------------------------------------------------*/
+.menu {
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    height: 60px;
+}
+
+.menu #logo {
+    float: left;
+    height: 30px;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    line-height: 30px;
+    font-family: 'Reem Kufi', sans-serif;
+}
+
+.menu>ul {
+    margin: 0px;
+    padding: 0px;
+    float: left;
+    list-style-type: none;
+}
+
+.menu>ul>li {
+    float: left;
+
+}
+
+.menu-item {
+    display: inline-block;
+    padding: 15px 50px;
+    height: 30px;
+    line-height: 30px;
+    color: rgb(238, 222, 222);
+    text-decoration: none;
+
+
+}
+
+.menu-item:hover {
+    background-color: #ff0055;
+
+
+}
+
+/*---------------تحت المينو مباشرة----------------------------*/
+.sub-content {
+    position: absolute;
+    top: 60px;
+    overflow: hidden;
+    background-color: #333;
+    max-height: 0;
+    text-align: right;
+
+}
+
+.sub-content a {
+    color: rgb(247, 241, 241);
+    text-decoration: none;
+
+
+
+}
+
+.sub-drop {
+    padding: 0;
+
+}
+
+.sub-drop ul {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+
+}
+
+.sub-drop ul li a {
+    display: inline-block;
+    padding: 10px 20px;
+
+}
+
+.sub-drop ul li:hover {
+    background-color: #ff0055;
+
+}
+
+.menu ul li:hover .sub-drop>ul {
+    visibility: visible;
+    opacity: 1;
+    transition: visibility 0s, opacity 0.3s ease-in;
+}
+
+/*----------------------------- control-------------------------------*/
+.menu-item:focus {
+    background-color: #ff0055;
+
+
+}
+
+.menu ul li:hover .sub-content {
+
+    max-height: 400px;
+    overflow: visible;
+    transform: max-height 0.3s ease-in;
+    -webkit-transition: max-height 0.3s ease-in;
+    -moz-transition: max-height 0.3s ease-in;
+
+}
+
+.sub-drop>ul {
+    visibility: hidden;
+    opacity: 0;
+}
+
+
+
+
+#rmenu {
+    float: right;
+}
+
+.sometext {
+    padding: 30px;
+    font-size: 3em;
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Reem Kufi', sans-serif;
+    color: rgb(37, 37, 197);
+
+
+}
+
+h1 {
+    text-align: right;
+    font-size: 2em;
+
+}
+
+/*---------------------marquue---------*/
+#marq1 {
+    font-family: 'Reem Kufi', sans-serif;
+    font-size: 9ch;
+
+
+}
+
+#footer {
+    background-color: rgb(78, 74, 74);
+    font-family: 'Reem Kufi';
+    text-align: center;
+    font-size: 22px;
+    color: #f3dfe6;
+
+}
+
+/*-------------------------------------*/
+
+.accordion {
+    background-color: rgb(216, 211, 211);
+    color: rgb(207, 120, 54);
+    cursor: pointer;
+    padding: 25px;
+    width: 100%;
+    border: none;
+    text-align: right;
+    outline: none;
+    font-size: 25px;
+    transition: 0.1s;
+    font-family: 'Reem Kufi';
+}
+
+.active,
+.accordion:hover {
+    background-color: rgba(216, 225, 241, 0.959);
+}
+
+.accordion:after {
+    content: '\002B';
+    color: rgb(221, 45, 45);
+    font-weight: bold;
+    float: center;
+    margin-left: 5px;
+}
+
+.active:after {
+    content: "\2212";
+}
+
+.panel {
+    padding: 0 18px;
+    background-color: rgrgb(226, 240, 245);
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+}
+
+#h2 {
+    font-size: 29px;
+    text-align: center;
+    font-family: 'Reem Kufi', sans-serif;
+    color: rgb(11, 56, 56);
+
+}
+
+.p {
+    font-size: 15px;
+    text-align: right;
+    color: black;
+
+}
+
+/*-------------------------------------------------*/
+main {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.icon {
+    position: relative;
+    width: 80px;
+    height: 80px;
+    margin: 20px;
+    border-radius: 50%;
+    transition: all .8s;
+    cursor: pointer;
+}
+
+.icon:hover {
+    background-color: #e60073;
+    box-shadow: 0 0 20px #e60073;
+}
+
+.icon:hover:nth-child(2) {
+    background-color: #1877f2;
+    box-shadow: 0 0 20px #1877f2;
+}
+
+.icon:hover:nth-child(3) {
+    background-color: #25d366;
+    box-shadow: 0 0 20px #25d366;
+}
+
+.icon:hover:nth-child(4) {
+    background-color: #1da1f2;
+    box-shadow: 0 0 20px #1da1f2;
+}
+
+.icon:hover:nth-child(5) {
+    background-color: #1877f2;
+    box-shadow: 0 0 20px #1877f2;
+}
+
+
+
+.icon i {
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.7rem;
+}
+
+svg circle {
+    stroke-dasharray: 150;
+    transition: all .8s ease-in-out;
+}
+
+.icon:hover circle {
+    stroke-dasharray: 220;
+}
+/*---------------------------*/
+
