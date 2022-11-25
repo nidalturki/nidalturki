@@ -1,0 +1,186 @@
+* {
+	padding:0;
+	margin:0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	text-align: right;
+}
+
+body {
+	background:#FEFEFE;
+	margin: 0;
+	color: rgb(6, 7, 7);
+	position: relative;
+	padding-bottom: 3.5em;
+	min-height: 100vh;
+	font-family: 'Noto Naskh Arabic', serif;
+}
+
+/*---menu ---*/
+.menu_bar {
+	display:none;
+}
+
+header {
+	width: 100%;
+}
+
+header nav {
+	background:#7bb8df;
+	z-index:1000;
+	max-width: 1000%;
+	width:100%;
+	font-size: 15px;
+}
+
+header nav ul {
+	list-style:none;
+
+}
+
+header nav ul li {
+	display:inline-block;
+	position: relative;
+
+}
+
+header nav ul li:hover {
+	background:#2e8dc9;
+}
+/*------التغير في شكل المينو اللي تحت -------*/
+header nav  ul li a {
+		color: black;
+	display:block;
+	text-decoration:none;
+	padding: 20px;
+	font-size: 20px;
+	font-family: 'Reem Kufi Ink', sans-serif;
+	padding-right: 50px;
+}
+
+header nav ul li a span {
+	margin-right:10px;
+
+}
+
+header nav ul li:hover .children {
+	display:block;
+}
+
+header nav ul li .children {
+	display: none;
+	background:#6995b1;
+	position: absolute;
+	width: 150%;
+	z-index:1000;
+}
+
+header nav ul li .children li {
+	display:block;
+	overflow: hidden;
+	border-bottom: 1px solid rgba(255,255,255,.5);
+
+}
+
+header nav ul li .children li a {
+	display: block;
+	font-family: 'Noto Naskh Arabic', serif;
+	height: 50px;
+
+}
+
+header nav ul li .children li a span {
+	float: right;
+	position: relative;
+	top:3px;
+	margin-right:0;
+	margin-left:10px;
+}
+
+header nav ul li .caret {
+	position: relative;
+	top:3px;
+	margin-left:10px;
+	margin-right:0px;
+}
+
+@media screen and (max-width: 800px) {
+	body {
+		padding-top:80px;
+	}
+
+	.menu_bar {
+		display:block;
+		width:100%;
+		position: fixed;
+		top:0;
+		background:#E6344A;
+	}
+
+	.menu_bar .bt-menu {
+		display: block;
+		padding: 20px;
+		color: #fff;
+		overflow: hidden;
+		font-size: 25px;
+		font-weight: bold;
+		text-decoration: none;
+	}
+
+	.menu_bar span {
+		float: right;
+		font-size: 40px;
+	}
+
+	header nav {
+		width: 80%;
+		height: calc(100% - 80px);
+		position: fixed;
+		right:100%;
+		margin: 0;
+		overflow: scroll;
+	}
+
+	header nav ul li {
+		display: block;
+		border-bottom:1px solid rgba(255,255,255,.5);
+	}
+
+	header nav ul li a {
+		display: block;
+	}
+
+	header nav ul li:hover .children {
+		display: none;
+	}
+
+	header nav ul li .children {
+		width: 100%;
+		position: relative;
+	}
+
+	header nav ul li .children li a {
+		margin-left:20px;
+	}
+
+	header nav ul li .caret {
+		float: right;
+	}
+}
+
+/*---footer---*/
+.footer{
+	background-color: #0c3b58;
+	padding: 2em 0;
+	text-align: center;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	color: white;
+}
+
+.kh{
+	padding: 50px;
+}
+
